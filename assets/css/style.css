@@ -1,0 +1,104 @@
+/* define variables */
+:root {
+    --background-color:rgb(58, 58, 58);
+    --main-font:rgb(157, 75, 233);
+    --second-font: white;
+}
+
+/* element selectors */
+body {
+    background-color: var(--background-color);
+    padding-top: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--main-font);
+    font-weight: 900;
+    padding: 5px 10px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 20%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    color: var(--main-font);
+    margin: 20px 0;
+}
+
+header p {
+    color: var(--second-font);
+    text-align: center;
+    padding: 0 5%;
+}
+
+/* class selectors */
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.item {
+    border: 1px dashed white;
+    margin: 1em;
+    padding: 1em;
+    padding-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-column-gap: 10px;
+}
+
+.item h2 {
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    background-color:var(--background-color);
+    margin-top: -20px;
+}
+
+.item pre{
+    background-color: var(--main-font);
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 10px;
+    user-select: all;
+}
+/* media queries */
+@media screen and (min-width: 768px) {
+    .item:nth-child(odd) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .item:nth-child(even) {
+        grid-column-start: 7;
+        grid-column-end: 13;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .item:nth-child(3n+1) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .item:nth-child(3n+2) {
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+
+    .item:nth-child(3n+3) {
+        grid-column-start: 9;
+        grid-column-end: 13;
+    }
+}
