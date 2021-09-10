@@ -3,6 +3,8 @@
     --background-color:rgb(58, 58, 58);
     --main-font:rgb(157, 75, 233);
     --second-font: white;
+    --bg-box: linear-gradient(45deg, rgb(238, 74, 74),
+    rgb(96, 96, 243));
 }
 
 /* element selectors */
@@ -52,7 +54,6 @@ header p {
     padding-top: 0;
     grid-column-start: 1;
     grid-column-end: 13;
-    grid-column-gap: 10px;
 }
 
 .item h2 {
@@ -64,7 +65,7 @@ header p {
 }
 
 .item pre{
-    background-color: var(--main-font);
+    background: var(--bg-box);
     border-radius: 5px;
     color: white;
     font-family: monospace;
