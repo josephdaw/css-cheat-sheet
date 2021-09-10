@@ -74,6 +74,19 @@ header p {
     padding: 10px;
     user-select: all;
 }
+
+/* card glow effect */
+.card, .card header {
+    border-radius: 8px;
+    transition: all 0.5x ease-in-out;
+}
+
+.card:hover, .card:hover .card header {
+    box-shadow: inset 0px 0px 8px
+    rgb(157, 75, 233), 0 0 15px
+    rgb(157, 75, 233);
+}
+
 /* media queries */
 @media screen and (min-width: 768px) {
     .card:nth-child(odd) {
