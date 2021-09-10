@@ -47,7 +47,7 @@ header p {
     grid-template-columns: repeat(12, 1fr);
 }
 
-.item {
+.card {
     border: 1px dashed white;
     margin: 1em;
     padding: 1em;
@@ -56,7 +56,7 @@ header p {
     grid-column-end: 13;
 }
 
-.item h2 {
+.card h2 {
     border: 1px solid white;
     border-radius: 5px;
     position: relative;
@@ -64,7 +64,7 @@ header p {
     margin-top: -20px;
 }
 
-.item pre{
+.card pre{
     background: var(--bg-box);
     border-radius: 5px;
     color: white;
@@ -76,29 +76,29 @@ header p {
 }
 /* media queries */
 @media screen and (min-width: 768px) {
-    .item:nth-child(odd) {
+    .card:nth-child(odd) {
         grid-column-start: 1;
         grid-column-end: 7;
     }
 
-    .item:nth-child(even) {
+    .card:nth-child(even) {
         grid-column-start: 7;
         grid-column-end: 13;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .item:nth-child(3n+1) {
+    .card:nth-child(3n+1) {
         grid-column-start: 1;
         grid-column-end: 5;
     }
 
-    .item:nth-child(3n+2) {
+    .card:nth-child(3n+2) {
         grid-column-start: 5;
         grid-column-end: 9;
     }
 
-    .item:nth-child(3n+3) {
+    .card:nth-child(3n+3) {
         grid-column-start: 9;
         grid-column-end: 13;
     }
