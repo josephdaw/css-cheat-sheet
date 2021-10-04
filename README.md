@@ -28,9 +28,3 @@ This project idea is part of the [Adelaide University Coding Boot Camp](https://
 
 ## License
 This project is released under the [MIT License](LICENSE)
-
-<<<<<<< HEAD
-playing with git
-=======
-add something
->>>>>>> parent of b70265f (fix README)
