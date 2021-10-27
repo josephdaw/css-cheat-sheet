@@ -2,10 +2,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?&logo=css3&logoColor=white)
+
 ## Description
 This project focused on creating a responsive webpage using CSS grid, flexbox, and media queries. This page conformed to the "mobile first" design principle.
 
 The final result is deployed on GitHub pages at https://josephdaw.github.io/css-cheat-sheet/.
+
+![site preview](assets/images/css-snippet-cheatsheet.png)
 
 ## Lessons Learned
 
